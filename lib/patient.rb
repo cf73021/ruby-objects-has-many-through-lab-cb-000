@@ -10,8 +10,8 @@ class Patient
   def new_appointment(doctor, date)
     new_appointment = Appointment.new(self, doctor, date)
   end
-  
+
   def appointments
-    Appointment.all.each { |x| x.doctor == self}
+    Appointment.all.each { |x| x.patient == self}
   end
 end
