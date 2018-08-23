@@ -9,4 +9,8 @@ class Appointment
     @@all << self
     doctor.patients << patient
   end
+
+  def self.all
+    @@all
+  end
 end
